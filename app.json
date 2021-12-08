@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "private-book-repo",
+    "slug": "private-book-repo",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "private-book-repo"
+}
