@@ -3,7 +3,9 @@ import { StyleSheet, Text, View } from 'react-native';
 
 export default function FriendsPage() {
     return (
-        <View style={styles.container}></View>
+        <View style={styles.container}>
+          <Text>Friends Page</Text>
+        </View>
 
     );
   }

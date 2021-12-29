@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, StyleSheet, Text, View, Pressable } from 'react-native';
+import { Button, StyleSheet, Text, View } from 'react-native';
 
 export type Props = {
   name: string;
@@ -26,12 +26,24 @@ const Home: React.FC<Props> = ({
 
   return (
     <View style={styles.container}>
-      <Pressable style={styles.homepage_buttons} onPress={() => console.log('test')}>
-        <Text style={styles.homepage_buttons_text}>See your reading list</Text>
-      </Pressable>
-      <Pressable style={styles.homepage_buttons} onPress={() => console.log('test')}>
-        <Text style={styles.homepage_buttons_text}>Manage your friends</Text>
-      </Pressable>
+      <Text style={styles.greeting}>
+        Hello {name}
+        {getExclamationMarks(enthusiasmLevel)}
+      </Text>
+      <View>
+        <Button
+          title="Increase enthusiasm"
+          accessibilityLabel="increment"
+          onPress={onIncrement}
+          color="blue"
+        />
+        <Button
+          title="Decrease enthusiasm"
+          accessibilityLabel="decrement"
+          onPress={onDecrement}
+          color="red"
+        />
+      </View>
     </View>
   );
 };
@@ -42,11 +54,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center'
   },
-  homepage_buttons: {
-
-  },
-  homepage_buttons_text: {
-
+  greeting: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    margin: 16
   }
 });
 
