@@ -26,24 +26,6 @@ const Home: React.FC<Props> = ({
 
   return (
     <View style={styles.container}>
-      {/* <Text style={styles.greeting}>
-        Hello {name}
-        {getExclamationMarks(enthusiasmLevel)}
-      </Text>
-      <View>
-        <Button
-          title="Increase enthusiasm"
-          accessibilityLabel="increment"
-          onPress={onIncrement}
-          color="blue"
-        />
-        <Button
-          title="Decrease enthusiasm"
-          accessibilityLabel="decrement"
-          onPress={onDecrement}
-          color="red"
-        />
-      </View> */}
       <Pressable style={styles.homepage_buttons} onPress={() => console.log('test')}>
         <Text style={styles.homepage_buttons_text}>See your reading list</Text>
       </Pressable>
@@ -59,11 +41,6 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center'
-  },
-  greeting: {
-    fontSize: 20,
-    fontWeight: 'bold',
-    margin: 16
   },
   homepage_buttons: {
 
