@@ -65,9 +65,20 @@
 
 import React from 'react';
 import { Button, StyleSheet, Text, View } from 'react-native';
+import {useNavigation} from '@react-navigation/native';
+import {StackNavigationProp} from '@react-navigation/stack';
+import {RootStackParamList} from './RootStackParams';
 
-const HomePage = () => {
+type authScreenProp = StackNavigationProp<RootStackParamList, 'HomePage'>;
 
+function HomePage() {
+  const navigation = useNavigation<authScreenProp>();
+
+  return (
+    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+      <Text>HomePage</Text>
+      <Button title="BookList" onPress={() => navigation.navigate('BookList')} />
+    </View>
+  );
 }
-
 export default HomePage;

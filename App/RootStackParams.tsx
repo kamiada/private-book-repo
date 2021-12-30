@@ -1,0 +1,1 @@
+export type RootStackParamList = {BookList: undefined;HomePage: undefined;};
