@@ -2,18 +2,10 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Navigation } from 'react-native-navigation';
 
-// export default function BookList() {
-//   return (
-//     <View style={styles.container}>
-//       <Text>Books</Text>
-//     </View>
-//   );
-// }
-
 const BookList = () => {
   return (
     <View style={styles.container}>
-      <Text>Settings Screen</Text>
+      <Text>Book list Screen</Text>
     </View>
   );
 }
