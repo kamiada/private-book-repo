@@ -1,1 +1,1 @@
-export type RootStackParamList = {BookList: undefined;HomePage: undefined;};
+export type RootStackParamList = {BookList: undefined;HomePage: undefined; Friends: undefined;};
