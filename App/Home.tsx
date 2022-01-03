@@ -31,12 +31,14 @@ const styles = StyleSheet.create({
     backgroundColor: '#D29D79',
     alignItems: 'center',
     justifyContent: 'center',
+    display: 'flex'
   },
   buttons_homePage: {
     borderWidth: 2,
     borderColor: '#170E08',
     padding: 10,
     margin: 10,
+    display: 'flex'
   }
 });
 export default HomePage;
