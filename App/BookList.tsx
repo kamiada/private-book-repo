@@ -10,13 +10,16 @@ type myProps = {
 }
 
 
-const BookList: FC<myProps> = ({booklist}): ReactElement => {
+const BookList: FC<myProps> = ({ booklist }): ReactElement => {
   return (
     <View style={styles.container}>
       <Text>Books you read in {year}</Text>
-        {booklist  && {
-
-        }}
+      {booklist.length > 0 && booklist.map(book => {
+        <ul>
+          <li>{book}</li>
+        </ul>
+      })
+      }
     </View>
   );
 }
