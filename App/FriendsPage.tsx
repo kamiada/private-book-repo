@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { FC, ReactElement } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default function FriendsPage() {
+type myProps = {
+}
+
+const FriendsPage: FC<myProps> = ({}): ReactElement => {
     return (
         <View style={styles.container}>
           <Text>Friends Page</Text>
@@ -17,3 +20,5 @@ export default function FriendsPage() {
       justifyContent: 'center',
     },
   });
+
+  export default FriendsPage;
